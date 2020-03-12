@@ -1,0 +1,225 @@
+main #top {
+    position: absolute;
+    top: 60px;
+}
+
+main #top #gradient {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background: rgb(55, 159, 212);
+    background: linear-gradient(180deg, rgba(55, 159, 212, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    z-index: 0;
+}
+
+main #top h1 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 4em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@media (max-width: 450px) {
+    main #top h1 {
+        font-size: 3em;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main article#policy_top {
+    margin-top: 100vh;
+}
+
+main article#policy_top #about {
+    margin: 1em 3em 1em 3em;
+    text-align: center;
+}
+
+main article#policy_top #about h1#title {
+    font-size: 2em;
+    padding: .5em 0em .5em 0em;
+    color: rgb(36, 67, 102);
+    border-top: 2px solid rgb(36, 67, 102);
+    border-bottom: 2px solid rgb(36, 67, 102);
+}
+
+@media (min-width: 480px) {
+    main article#policy_top #about h1#title {
+        padding: 10px 0em 10px 0em;
+    }
+}
+
+
+main article#policy_top #about p {
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main article#policy_top #point {
+    margin: 50px 0 0 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main article#policy_top #point .box h2::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    font-weight: 900;
+    padding: 1em .5em 0 0;
+    color: rgb(93, 167, 32);
+}
+
+main article#policy_top #point p {
+    margin: 0 0 60px 0;
+    padding: 0 0 0 2em;
+}
+
+main article#policy_top #appear {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main article#policy_top #appear .wrapper {
+    width: 400px;
+    height: 800px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    main article#policy_top #appear .wrapper {
+        width: 90vw;
+    }
+}
+
+main article#policy_top #appear .wrapper .box {
+    width: 100%;
+    height: 400px;
+    margin: 2em;
+    background-color: rgb(252, 235, 209);
+    text-align: center;
+    -moz-box-shadow: inset 0px 0px 15px 15px #fff;
+    -webkit-box-shadow: inset 0px 0px 15px 15px #fff;
+    box-shadow: inset 0px 0px 15px 15px #fff;
+    display: table;
+    margin: 0 auto;
+}
+
+
+main article#policy_top #appear .wrapper .box h2 {
+    position: absolute;
+    font-size: 1.5em;
+    color: white;
+    margin: 0 0px 0 0px;
+    padding: .5em 30px .5em 30px;
+    letter-spacing: 4px;
+    border-radius: 15px;
+}
+
+main article#policy_top #appear .wrapper .box h2#kyoiku {
+    background-color: rgb(202, 95, 33);
+}
+
+main article#policy_top #appear .wrapper .box h2#kodomo {
+    background-color: rgb(207, 73, 147);
+}
+
+main article#policy_top #appear .wrapper .box p {
+    margin: 0em;
+    padding: 3em 10% 1em 10%;
+    line-height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+main article#policy_top #appear .wrapper .box p#sec2 {
+    padding: 2em 10% 1em 10%;
+}
+
+main article#policy_top #appear .wrapper img {
+    width: 300px;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    main article#policy_top #appear .wrapper img {
+        width: 80%;
+    }
+}
+
+main article#schedule #title {
+    display: flex;
+    margin: 2em 1em 1em 1em;
+}
+
+main article#schedule #title #badge {
+    background-color: rgb(202, 95, 33);
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    padding: .2em .8em .2em .8em;
+}
+
+main article#schedule #sub {
+    color: rgb(202, 95, 33);
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: .1em 0 0 1em;
+}
+
+main article#schedule #timeline {
+    margin: 20px 50px 10px 50px;
+}
+
+main article#schedule #timeline li {
+    display: flex;
+    margin-top: -1px;
+    padding: 1em .5em 1em .5em;
+    border-top: 1px solid rgb(202, 95, 33);
+    border-bottom: 1px solid rgb(202, 95, 33);
+}
+
+main article#schedule #timeline li #timeline_title {
+    width: 180px;
+    text-align: center;
+    color: rgb(33, 94, 173);
+    font-weight: 900;
+}
+
+main article#schedule #timeline li #arrow {
+    position: absolute;
+    font-size: 20px;
+    margin: 25px 0 0 0;
+    left: 140px;
+    color: rgb(202, 95, 33);
+}
+
+main article#schedule #timeline_plus {
+    margin: 0 0 100px 3em;
+}

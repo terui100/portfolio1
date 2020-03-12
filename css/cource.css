@@ -1,0 +1,50 @@
+main h1#title {
+    font-size: 2em;
+    padding: .5em 0em .5em 0em;
+    color: rgb(36, 67, 102);
+    border-top: 2px solid rgb(36, 67, 102);
+    border-bottom: 2px solid rgb(36, 67, 102);
+    margin: 100px 3em 50px 3em;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    main h1#title {
+        margin: 100px 10px 50px 10px;
+    }
+}
+
+main form#search {
+    border: 2px solid rgb(172, 172, 172);
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    main form#search {
+        width: 90%;
+    }
+}
+
+main form#search i {
+    color: rgb(172, 172, 172);
+    font-size: 1.4em;
+    padding: 0 0 0 20px;
+    vertical-align: middle;
+}
+
+main form#search input#searchbox {
+    width: 80%;
+    height: 40px;
+    border: none;
+    margin: 0 0 0 30px;
+    color: rgb(70, 70, 70);
+    font-size: 1em;
+}
+
+main form#search input#searchbox[type="text"]:focus {
+    outline: 0;
+}

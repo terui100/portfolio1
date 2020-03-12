@@ -1,0 +1,72 @@
+main article#top {
+    width: calc(100vw - 3em);
+    height: calc(100vh - 76px - 3em);
+    background-color: rgb(44, 113, 170);
+    padding: 3em 1em 1em 2em;
+    margin: 0;
+}
+
+main article#top::before {
+    content: "";
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 100vw;
+    border-color: transparent transparent rgb(44, 113, 170) transparent;
+    transform: scale(1, -1);
+}
+
+main article#top h1#title {
+    color: white;
+    font-size: 6em;
+    font-weight: 500;
+    margin: 0;
+}
+
+main article#top h1#title:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60%;
+    background: -webkit-gradient(linear, left top, right bottom, from(rgb(255, 255, 255)), to(rgba(255, 255, 255, 0)));
+    background: -moz-linear-gradient(left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    background: linear-gradient(left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+}
+
+main article#top h1#title span#sub {
+    font-size: .6em;
+}
+
+main article#top h1#subtitle {
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: 500;
+    padding-top: 2em;
+}
+
+main article#top h2#sub {
+    color: white;
+    margin: 4em 0 0 0;
+}
+
+main article#top h2#sub p#big {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+}
+
+main article#promotion {
+    margin: 200px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+main article#promotion #movie {
+    background-color: rgb(190, 190, 190);
+    width: calc(100vw - 100px);
+    height: 500px;
+}
